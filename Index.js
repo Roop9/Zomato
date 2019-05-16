@@ -41,7 +41,7 @@ $.getJSON(settingsTwo, function(data){
     $("#button").on("click", function(){
     $.each(data, function(index, value){
     
-        listTwo +=  "<div class='card col-sm-3 mt-5 p-0 ml-5 text-center' style='width:10rem;'>";
+        listTwo +=  "<div class='card col-4 col-sm-3 mt-5 p-0 ml-5' style='width:10rem;'>";
         listTwo += "<img class='card-img-top mt-1' src=" +value.restaurant.thumb+ " alt='Restaurant Image'>";
         listTwo +=  "<div class='card-body'>";
         listTwo += "<a href=" + value.restaurant.url + " target='_blank'><h5 class='card-title'>" +value.restaurant.name+ "</h5></a></div>";
